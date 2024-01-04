@@ -13,10 +13,10 @@ This algorithm was implemented by using python 3.6.11 using Tensorflow 1.10.0 an
 
 ### Pre-Processing
 ```crop_image.py``` is capable of dividing the image into 1/8 overlapping images, which is a patch sampling way.
-- Set path to the image directory
-- Set path to save the visualized image directory 
+- Set a path to the image directory
+- Set a path to save the visualized image directory 
 
-```normaling.py``` is capable of normalizng the image into same color staining by using the Macenko's method [[1]](https://ieeexplore.ieee.org/document/5193250). I set the maximum stain concentrations to [1.5 1.3].
+```normaling.py``` is capable of normalizing the image into the same color staining by using Macenko's method [[1]](https://ieeexplore.ieee.org/document/5193250). I set the maximum stain concentrations to [1.5 1.3].
 - Set path to the image directory
 - Set path to save the normalized image directory 
 
@@ -26,7 +26,7 @@ This algorithm was implemented by using python 3.6.11 using Tensorflow 1.10.0 an
 cd PAIP2023_maskrcnn/Mask_RCNN/samples/nucleus/
 python3 nucleus_paip.py train --dataset=/path/to/dataset --subset=train --weights=imagenet
 ```
-The training parameter showed in ```nucleus_paip.py```.  The input size of training is set to 512×512. The pre-trained weight of ImageNet ILSVRC 2012 dataset had used in the training phase. The SGD optimizer was used with learning rate 0.001. 
+The training parameter is shown in ```nucleus_paip.py```.  The input size of training is set to 512×512. The pre-trained weight of the ImageNet ILSVRC 2012 dataset was used in the training phase. The SGD optimizer was used with a learning rate of 0.001. 
 
 
 ### Inference
@@ -38,16 +38,14 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 - Set path to the saved image directory 
 
 ### Post-Processing
-```count_YOLO_npy.py``` is capable of counting the predicted tumor cells and estimating the TC values.
+```colorful_label.py``` is capable of drawing the tumor instances.
 
-```distribute_data.py``` is capable of transforming the prediction format. The first step moves the image in the right file. The second step produces corresponding annotation txt (For Detection model). The thrid step produces corresponding annotation txt (For Instance segmentation model).
+```knn_ping.py``` ```kmeans.py``` ```test_kmeans_knn.py``` ```test_knn_tung.py``` are capable of improving the predicted results, which methods are based on Kmeans or KNN algorithms.
 
-```draw_YOLO_npy.py``` is capable of drawing the contour of instances on H&E stained images, which is ```.npy``` format. The yellow instances represent the positive tumor cells, and blue instances represent the negative tumor cells.
+```tta_new.py``` ```tta_npy.py``` are capable of being test time augmentation.
 
-```vis_YOLO8_instance.py``` is a diffeent way to draw the contour of instances on H&E stained images, which is ```.txt``` format with different color.
+```visualize_img.py``` is capable of subplotting the figures.
 
-<<<<<<< HEAD
-=======
 ## Result
 | IMAGE                                           | GT                                             | PREDICTION                                      |
 | ----------------------------------------------- | ---------------------------------------------- | ----------------------------------------------- |
@@ -56,13 +54,12 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 | <img src="example/tr_p010_3_img.png" width="200" height="200"> | <img src="example/tr_p010_3_gt.png" width="200" height="200"> | <img src="example/tr_p010_3_result.png" width="200" height="200"> |
 
 
->>>>>>> ea5ecef (Add images and resize them)
 ## Color Reference
 
 | Color             | RGB                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Postive tumor cell |![Yellow Color](https://via.placeholder.com/10x10/FFFF00/000000?text=+) |
-| Negative tumor cell |![Blue Color](https://via.placeholder.com/10x10/0000FF/000000?text=+)
+| Tumor cell |![Yellow Color](https://via.placeholder.com/10x10/FFFF00/000000?text=+) |
+| Non-tumor cell |![Blue Color](https://via.placeholder.com/10x10/0000FF/000000?text=+)
 
 ## Reference
 ```
