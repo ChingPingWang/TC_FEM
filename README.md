@@ -1,13 +1,13 @@
 
 # README
 
-Improving Tumor Cellularity Estimation with Ensemble Mask R-CNN: Insights from the PAIP 2023 Challenge
+Boosting Predictive Accuracy in Tumor Cellularity Evaluation with AI-Powered Ensemble Methods
 
 An ensemble Mask R-CNN model with data augmentation was proposed to identify the tumor and non-tumor nucleus. 
 
 
 ## Set Up Environment
-This algorithm was implemented by using python 3.6.11 using Tensorflow 1.10.0 and Keras 2.2.4 on Linux system with 1 NVIDIA GeForce GTX 1080 Ti GPU.
+This algorithm was implemented by using python 3.6.11 using Tensorflow 1.10.0 and Keras 2.2.4 on Linux system with 1 NVIDIA GeForce GTX 2080 Ti GPU.
 
 ## Running the code
 
@@ -58,7 +58,7 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 | Color             | RGB                                                                |
 | ----------------- | ------------------------------------------------------------------ |
 | Tumor cell |![Yellow Color](https://via.placeholder.com/10x10/FFFF00/000000?text=+) |
-| Non-tumor cell |![Blue Color](https://via.placeholder.com/10x10/0000FF/000000?text=+)
+| Non-tumor cell |![Blue Color](https://via.placeholder.com/10x10/0000FF/000000?text=+)|
 
 ## Reference
 ```
