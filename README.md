@@ -47,13 +47,13 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 ```visualize_img.py``` is capable of subplotting the figures.
 
 ## Result
+* tumor cell :yellow_circle:
+* non-tumor cell :blue_circle:
+
 | IMAGE                                           | GT                                             | PREDICTION                                      |
 | ----------------------------------------------- | ---------------------------------------------- | ----------------------------------------------- |
 | <img src="example/tr_c001_4_img.png" width="200" height="200"> | <img src="example/tr_c001_4_gt.png" width="200" height="200"> | <img src="example/tr_c001_4_result.png" width="200" height="200"> |
 | <img src="example/tr_p010_3_img.png" width="200" height="200"> | <img src="example/tr_p010_3_gt.png" width="200" height="200"> | <img src="example/tr_p010_3_result.png" width="200" height="200"> |
-
-* tumor cell :yellow_circle:
-* non-tumor cell :blue_circle:
 
 ## Reference
 ```
