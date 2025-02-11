@@ -48,6 +48,7 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 
 ## Result
 * tumor cell :yellow_circle:
+
 * non-tumor cell :blue_circle:
 
 | IMAGE                                           | GT                                             | PREDICTION                                      |
