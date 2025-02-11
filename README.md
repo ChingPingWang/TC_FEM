@@ -57,8 +57,8 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 
 | Color             | RGB                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Tumor cell |![Yellow Color](https://via.placeholder.com/10x10/FFFF00/000000?text=+) |
-| Non-tumor cell |![Blue Color](https://via.placeholder.com/10x10/0000FF/000000?text=+)|
+| Tumor cell |<span style="color🟡">some *yellow* text</span> |
+| Non-tumor cell |<span style="color🔵">some *blue* text</span>|
 
 ## Reference
 ```
