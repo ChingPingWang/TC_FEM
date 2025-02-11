@@ -52,7 +52,8 @@ python3 nucleus.py detect --dataset=/path/to/dataset --subset=train --weights=<l
 | <img src="example/tr_c001_4_img.png" width="200" height="200"> | <img src="example/tr_c001_4_gt.png" width="200" height="200"> | <img src="example/tr_c001_4_result.png" width="200" height="200"> |
 | <img src="example/tr_p010_3_img.png" width="200" height="200"> | <img src="example/tr_p010_3_gt.png" width="200" height="200"> | <img src="example/tr_p010_3_result.png" width="200" height="200"> |
 
-The tumor cell color is `rgb(0, 255, 255)` and non-tumor cell is `rgb(0, 255, 0)`.
+* tumor cell: yellow_circle:
+* non-tumor cell: blue_circle:
 
 ## Reference
 ```
