@@ -5,6 +5,8 @@ Boosting Predictive Accuracy in Tumor Cellularity Evaluation with AI-Powered Ens
 
 An ensemble Mask R-CNN model with data augmentation was proposed to identify the tumor and non-tumor nucleus. 
 
+<img src="examples/diagram.png" alt="Methods diagram" style="max-width: 100%; height: auto;">
+
 
 ## Set Up Environment
 This algorithm was implemented by using python 3.6.11 using Tensorflow 1.10.0 and Keras 2.2.4 on Linux system with 1 NVIDIA GeForce GTX 2080 Ti GPU.
