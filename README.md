@@ -2,6 +2,7 @@
 # README
 
 Boosting Predictive Accuracy in Tumor Cellularity Evaluation with AI-Powered Ensemble Methods
+Published link: https://link.springer.com/article/10.1007/s12553-025-00965-9
 
 An ensemble Mask R-CNN model with data augmentation was proposed to identify the tumor and non-tumor nucleus. 
 
